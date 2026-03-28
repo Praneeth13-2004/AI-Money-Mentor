@@ -120,23 +120,7 @@ python-dotenv
 
 ## Architecture Overview
 
-```
-User Input (Income, Expenses, Savings, Loans, Goals)
-            │
-            ▼
-      main.py (Streamlit UI + session state)
-            │
-    ┌───────┼───────────┐
-    ▼       ▼           ▼
-calc.py  suggest.py  chatbot.py
-    └───────┴───────────┘
-                │
-                ▼
-    LangChain + ChatGroq (groq/compound)
-                │
-                ▼
-           Groq LLM API
-```
+<img width="704" height="557" alt="Screenshot 2026-03-28 113528" src="https://github.com/user-attachments/assets/87b86e7d-7362-4828-9ff7-ae6239dd9f31" />
 
 ---
 
@@ -156,8 +140,5 @@ calc.py  suggest.py  chatbot.py
 - Improve input validation for edge cases (negative values, expenses exceeding income).
 - Deploy on Streamlit Cloud or a cloud platform for public access.
 
----
 
-## License
 
-This project is intended for educational purposes as part of the AI & ML curriculum at CMR Institute of Technology, Bengaluru.
